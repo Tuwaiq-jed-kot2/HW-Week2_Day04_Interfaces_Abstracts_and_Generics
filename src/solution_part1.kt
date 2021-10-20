@@ -3,11 +3,11 @@ interface Animal {
     val name :String
     fun play()
 }
-class Lion() :Animal {
-    override val name: String = "lion"
+class Bear() :Animal {
+    override val name: String = "Bear"
 
     override fun play() {
-        println(" you cant play with loins ")
+        println(" you cant play with Bear ")
     }
 }
 class Cat():Animal{
@@ -18,8 +18,8 @@ class Cat():Animal{
 }
 
 fun main() {
-    val lion=Lion()
-    lion.play()
+    val bear=Bear()
+    bear.play()
     val cat=Cat()
     cat.play()
 }
