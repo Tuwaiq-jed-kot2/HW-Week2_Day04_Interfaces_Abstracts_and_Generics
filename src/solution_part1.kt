@@ -1,7 +1,3 @@
-//## Part I - Interfaces and Abstract Classes.
-//---
-//- Create an example of, a Class and an Interface, and allow to Implement the Interface methods and variables in the Class.
-//- Create an example of, a Class and an Abstract Class, and Implement different methods, variables, and Abastract methods from the Abstract Class
 
 interface Company {
 
