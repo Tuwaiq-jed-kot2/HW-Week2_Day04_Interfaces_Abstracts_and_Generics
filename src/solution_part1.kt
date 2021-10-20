@@ -1,4 +1,6 @@
 
+//Part1
+
 interface Company {
 
     fun getExperience(startYear: Int, yearNow: Int): Int
@@ -27,6 +29,8 @@ class Employee(var name: String, var job: String): Company {
         }
     }
 }
+
+//Part 2
 
 abstract class Drinks {
     abstract var name: String
