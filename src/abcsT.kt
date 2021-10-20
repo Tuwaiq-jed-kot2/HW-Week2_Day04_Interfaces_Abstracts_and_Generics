@@ -1,21 +1,11 @@
-//INTERFASE
-interface Seacona{
-
-    fun mid():Int
-
-    fun final ():Int
-
-    fun info ():String
-    fun sum ():Int
-}
-class Khaled (name:String, id:Int, subject:String):Seacona{
-    var midNum1:Int=9
-    var midNum2: Int=10
+class Ammean() :Season  (name = "Aimean",5,"mnath"){
+    var midNum1:Int=8
+    var midNum2: Int=8
     override fun mid(): Int {
         return midNum1+midNum2
 
     }
-    var finalNum:Int=30
+    var finalNum:Int=20
     override fun final(): Int {
         return finalNum
     }
@@ -32,6 +22,6 @@ class Khaled (name:String, id:Int, subject:String):Seacona{
 }
 
 fun main() {
-    val kk = Khaled("Khaled", 10, "math")
-    print(kk.info())
+    val AA=Ammean()
+    println(AA.info())
 }

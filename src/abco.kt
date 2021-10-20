@@ -1,14 +1,14 @@
-//INTERFASE
-interface Seacona{
+abstract class Season(val name:String, val id:Int, val subject:String){
 
-    fun mid():Int
+    abstract  fun mid(): Int
 
-    fun final ():Int
+    abstract fun final(): Int
 
-    fun info ():String
-    fun sum ():Int
+    abstract fun info(): String
+
+    abstract fun sum(): Int
 }
-class Khaled (name:String, id:Int, subject:String):Seacona{
+class Khaled1() :Season  (name = "khaled",10,"mnath"){
     var midNum1:Int=9
     var midNum2: Int=10
     override fun mid(): Int {
@@ -32,6 +32,7 @@ class Khaled (name:String, id:Int, subject:String):Seacona{
 }
 
 fun main() {
-    val kk = Khaled("Khaled", 10, "math")
-    print(kk.info())
+    val kkk=Khaled1()
+
+    println(kkk.info())
 }
