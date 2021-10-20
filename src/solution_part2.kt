@@ -1,10 +1,10 @@
 class Genter<G>(gen: G){
-    fun addItem(item:G){
+    fun subtime(item:G){
         println(item)
     }
 }
 
 fun main() {
     val ggg=Genter("number")
-    ggg.addItem("one,two,three,four,five.six")
+    ggg.subtime("one,two,three,four,five.six")
 }
