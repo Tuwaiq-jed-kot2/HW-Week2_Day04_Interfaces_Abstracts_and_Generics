@@ -15,3 +15,6 @@ The Kotlin assignment has two components
 ---
 - Create a Generic Class example with different type variances
 - Create three Generic Classes examples, one with `Where`, one with `Out` keyword, and the third with `In` keyword (Extra !!)
+//OUT: is like saying to the compiler don't consume the parameter just returned it if i type 'out' before the parameter.
+//IN: it is kind of opposite of 'out' witch is mean you can't produced but you are able to consumed it.
+//WHERE: to force the compiler to read is as the type data you chose it Exp: where T:String.
