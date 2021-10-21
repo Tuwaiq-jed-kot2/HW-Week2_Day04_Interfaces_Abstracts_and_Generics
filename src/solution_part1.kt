@@ -1,13 +1,13 @@
-interface  open class Employee (val firstName: String, val lastName: String) {
+interface class Employee (val firstName: String, val lastName: String) {
 
      open fun fullName(): String {
-        return lastName + firstName
+        return lastName
     }
 }
 class Programmer(firstName: String, lastName: String) : Employee(firstName, lastName) {
-
+override val firstName()= "welcome $firstName "
     override fun fullName (): String {
-        return  ("Welcome to our company")
+        return  firstName + lastName
     }
 }
 
