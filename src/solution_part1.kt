@@ -3,7 +3,6 @@
 interface Name {
 
    fun pp():String
-
 }
 
 class gg:Name{

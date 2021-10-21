@@ -4,11 +4,12 @@ class memmber<T>(mmNumber: String)
  fun numOfEmm():String{
      return numOfEmm()
  }
-class box<T:memmber>(val num:T){
-    fun pmemm(){
-        println(pmemm())
-    }
-    fun x(y:y<out num>):Boolean=box.{
+class name<T:>( num:T){
+    val name1 =num
+   init {
+       println(name1)
+   }
+    fun x(y:T<out num>):Boolean=box{
         it.x()
     }
 
@@ -19,8 +20,8 @@ class box<T:memmber>(val num:T){
 
 
 fun main() {
-    val s=memmber("99")
-    val n=memmber(0)
+    val s:name<String>=name("99")
+    val n:mumber<Int>=name (0)
     val x=y(mutableListOf(num1().num1()))
 }
 // i tried ..,
