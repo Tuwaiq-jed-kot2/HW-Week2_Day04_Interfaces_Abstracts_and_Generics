@@ -1,4 +1,4 @@
-
+// كود لحساب الخصم
 interface Shopping{
 
     fun cal():Double
@@ -6,7 +6,7 @@ interface Shopping{
 }
 class Discount():Shopping{
     val price=1000
-    val dis = 50
+    val dis = 50 //mean 50%
 
     override fun cal():Double {
 
@@ -31,7 +31,7 @@ class Discount():Shopping{
 
 
 ////////////abstract////////////////////////////
-
+//كود يحسب صافي الراتب
 abstract class Company(val id: Int, var basicSalary: Double) {
     fun getInfo() {
         println("$id and $basicSalary")
@@ -43,11 +43,11 @@ abstract class Company(val id: Int, var basicSalary: Double) {
 
 class Employee : Company(345678, 3000.0) {
     override fun calcluate(): Double {
-        val HRA = 0.1 * basicSalary
-        val DA = 0.73 * basicSalary
-        val GS = basicSalary - DA - HRA
-        val incometax = 0.3 * GS
-        val netSalary = GS - incometax
+        val HRA = 0.1 * basicSalary//بدل سكن
+        val DA = 0.73 * basicSalary//بدل اعانه
+        val GS = basicSalary - DA - HRA//الراتب الاجمالي
+        val incometax = 0.3 * GS//ضريبة الدخل
+        val netSalary = GS - incometax//صافي الراتب
         return netSalary
     }
 
