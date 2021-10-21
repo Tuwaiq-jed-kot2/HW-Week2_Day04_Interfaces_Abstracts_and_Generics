@@ -7,7 +7,7 @@ abstract class Employee (val firstName: String, val lastName: String) {
 class Programmer(firstName: String, lastName: String) : Employee(firstName, lastName) {
 
     override fun xx (): String {
-        return  "welcome$lastName"
+        return  "$lastName"
     }
 }
 
