@@ -17,11 +17,11 @@ class AA<T>(item: T) {
 
 fun main() {
 
-
     val x = AA(item = 6.6f) {
-    }
 
+    }
 }
+
 /////// Generic Question part1
 
 /////the Kotlin List<out T> type is an interface that provides read only operations like size,
