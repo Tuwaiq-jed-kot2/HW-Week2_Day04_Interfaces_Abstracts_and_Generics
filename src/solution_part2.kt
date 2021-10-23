@@ -17,9 +17,9 @@ class AA<T>(item: T) {
 
 fun main() {
 
-    val x = AA(item = 6.6f) {
+    val x = AA(item = 6.6f)
 
-    }
+
 }
 
 /////// Generic Question part1

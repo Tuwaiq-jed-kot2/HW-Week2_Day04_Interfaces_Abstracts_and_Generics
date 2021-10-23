@@ -8,6 +8,7 @@ interface  Iphone {
 
     }
 }
+
         class Mobile(val Model: Int) : Iphone {
             override fun Model() {
                 super.Model()
