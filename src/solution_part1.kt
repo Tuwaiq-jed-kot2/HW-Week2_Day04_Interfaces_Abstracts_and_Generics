@@ -3,32 +3,31 @@ interface Animal{
 
     var animalName:String
 
-    fun sound():String
+    fun eat():String
 
-    fun animalInfo(){
+    fun animalInfo() =  println("This animal is $animalName")
 
-        println(animalName)
-    }
+
+
 }
 
 
-class Cat(override var animalName: String) :Animal{
+class Deer(override var animalName: String) :Animal{
 
     init {
 
         animalInfo()
     }
 
-    override fun sound(): String {
+    override fun eat(): String = "Deer is herbivores, they eat plants"
 
-        return "The cat sound is Meow"
 
-    }
+
 
 }
 
 fun main() {
 
-    val ani = Cat("Cat")
-    println(ani.sound())
+    val animal = Deer("deer")
+    println(animal.eat())
 }

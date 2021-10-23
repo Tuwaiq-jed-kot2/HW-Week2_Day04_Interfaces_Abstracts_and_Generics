@@ -1,15 +1,10 @@
 //Q2
 
-abstract class Vehicle(var vehicleName: String, var vehicleColor: String){
+abstract class Vehicle(var vehicleName: String, private var vehicleColor: String){
 
     abstract fun moveForward() : String
 
-    fun vehicleInfo(){
-
-        println("The $vehicleName color is $vehicleColor")
-
-    }
-
+    fun vehicleInfo() = println("The $vehicleName color is $vehicleColor")
 
 }
 
@@ -20,10 +15,9 @@ class Car : Vehicle("car","Blue"){
         vehicleInfo()
 
     }
-    override fun moveForward(): String {
 
-        return "The $vehicleName moving forward"
-    }
+
+    override fun moveForward(): String = "The $vehicleName moving forward"
 
 
 }
@@ -32,8 +26,8 @@ class Car : Vehicle("car","Blue"){
 fun main() {
 
 
-    val vehc = Car()
-    println(vehc.moveForward())
+    val vehicle = Car()
+    println(vehicle.moveForward())
 
 }
 
