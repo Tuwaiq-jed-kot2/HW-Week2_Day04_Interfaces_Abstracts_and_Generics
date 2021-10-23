@@ -34,6 +34,8 @@ class Discount():Shopping{
 //كود يحسب صافي الراتب
 abstract class Company(val id: Int, var basicSalary: Double) {
     fun getInfo() {
+        println(" Enter your name")
+        var name= readLine()
         println("$id and $basicSalary")
     }
 
@@ -54,6 +56,7 @@ class Employee : Company(345678, 3000.0) {
 }
 
 fun main() {
+
     val x = Employee()
     x.getInfo()
     println(x.calcluate())
