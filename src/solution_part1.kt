@@ -1,36 +1,53 @@
 //interFaces
 //1
-interface Name {
+interface Color{
 
-   fun pp():String
+    var colorA:String
+
+    fun colorst():String
 }
+class Colorss(override var colorA:String) : Color{
 
-class gg:Name{
-
- override fun pp(): String ="black"
-
-}
-
-//2
-
-abstract class colors(val colorA:String, val colorB:String){
-    fun info(){
-    println("$colorA ,$colorB")
+    fun colors(): String {
+        println("black ")
+        return " $colorA  "
     }
-abstract fun addColor():String
-}
-class none():colors("yellow","black"){
-    override fun addColor(): String {
-      return ("red")
+
+    override fun colorst(): String {
+        println("your colors is $colorA black")
+        return "$colorA"
     }
 
 }
 
 fun main() {
-    val ll=gg()
-    println("black")
-    val col =colors()
-    col.info()
-    println(col.addColor())
+    var coll = Colorss("blackk")
+    println(coll.colorst())
+}
+
+//2
+
+abstract class colors1(var colorsA: String,var colosB: String){
+
+    fun colorsType(){
+        println("two colors ")
+        println(" $colorsA , $colosB ")
+    }
+
+    abstract fun colorT():String
+
+}
+
+class Colors0():colors1("black","pink"){
+    override fun colorT(): String {
+        return " $colorsA  $colosB"
+    }
+
+}
+
+fun main() {
+
+    var col = Colors0 ()
+    println(col.colorsType())
 
 }

@@ -1,29 +1,35 @@
 //Create a Generic Class example with different type variances
 
-class memmber<T>(mmNumber: String)
- fun numOfEmm():String{
-     return numOfEmm()
- }
-class name<T:>( num:T){
-    val name1 =num
-   init {
-       println(name1)
-   }
-    fun x(y:T<out num>):Boolean=box{
-        it.x()
+class name<T>(num: T) {
+
+    init {
+        println(num)
+    }
+
+    fun <P>number0(name:P){
+        println(name)
     }
 
 }
-/*Create three Generic Classes examples, one with `Where` one with `Out
-` keyword, and the third with `In` keyword
- */
-
 
 fun main() {
-    val s:name<String>=name("99")
-    val n:mumber<Int>=name (0)
-    val x=y(mutableListOf(num1().num1()))
+    val n1=name("n111")
+    val n2=name("n222")
 }
-// i tried ..,
+/*Create three Generic Classes examples, one with `Where` one with `Out
+` keyword, and the third with `In` keyword
+
+ out= You can use the out keyword in generic interfaces and delegates.
+
+    where= clause in a generic definition specifies constraints on the
+   types that are used as arguments for type parameters in a generic type, method,
+   delegate, or local function. Constraints can specify interfaces, base classes, or require a
+   generic type to be a reference, value, or unmanaged type.
+    They declare capabilities that the type argument must have.
+
+ in=  You can use the in keyword in generic interfaces and delegates
+
+
+ */
 
 
