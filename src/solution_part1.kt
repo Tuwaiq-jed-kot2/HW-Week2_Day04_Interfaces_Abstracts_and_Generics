@@ -38,12 +38,12 @@ abstract class Car(var carName:String,var carColor:String){
 
 class BMW(val Speed:Int):Car("BMW","red") {
     override fun Speed(): Int {
-        return Speed()
+        return Speed
     }
 }
 class Camry(val Speed:Int):Car("camry","white") {
     override fun Speed(): Int {
-        return Speed()
+        return Speed
     }
 }
 
